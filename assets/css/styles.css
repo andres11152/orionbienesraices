@@ -1,0 +1,148 @@
+/* Estilo para el contenedor principal de la página */
+.page-header-container {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Color de fondo opcional */
+}
+/* Estilo para la navegación de migas de pan */
+.breadcrumb-navigation {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-navigation ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumb-navigation li {
+  margin: 0 10px;
+}
+
+.breadcrumb-navigation a {
+  text-decoration: none;
+  color: #007bff; /* Color del enlace */
+}
+
+.breadcrumb-navigation .current-page {
+  color: #6c757d; /* Color para el ítem actual */
+}
+
+/* Estilo para la sección de encabezado */
+.header-section {
+  text-align: center;
+}
+
+.header-section h1 {
+  font-size: 2.5rem; /* Tamaño de fuente para el título principal */
+  margin-bottom: 10px;
+  color: #343a40; /* Color del texto del título */
+}
+
+.header-section h4 {
+  font-size: 1.5rem; /* Tamaño de fuente para los subtítulos */
+  margin-bottom: 15px;
+  color: #495057; /* Color del texto del subtítulo */
+}
+
+.header-section p {
+  font-size: 1rem; /* Tamaño de fuente para los párrafos */
+  color: #6c757d; /* Color del texto del párrafo */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  max-width: 800px; /* Ancho máximo para mejorar el diseño en pantallas grandes */
+  margin: 0 auto; /* Centra el párrafo horizontalmente */
+}
+
+.spacing-bottom {
+  margin-bottom: 20px; /* Margen inferior para separar párrafos */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.row-flex{
+  display: flex; 
+  justify-content:space-around;
+
+}
+.container-fluid {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+}
+
+.price-01 {
+  font-size: 1rem; /* Ajusta el tamaño de fuente según sea necesario */
+  color: #333; /* Cambia el color del texto según sea necesario */
+}
+.details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.details-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.details-list .icon-green {
+  color: #28a745; /* Color verde */
+  font-size: 1.5rem; /* Ajusta el tamaño según tus necesidades */
+  margin-right: 10px;
+}
+
+.details-list h5 {
+  margin: 0;
+  font-size: 1rem; /* Ajusta el tamaño del texto según tus necesidades */
+}
+
+
+
+/* Estilo responsivo para pantallas móviles */
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 2rem; /* Tamaño más pequeño para pantallas móviles */
+  }
+
+  .header-section h4 {
+    font-size: 1.25rem; /* Tamaño más pequeño para los subtítulos en móviles */
+  }
+
+  .header-section p {
+    font-size: 0.95rem; /* Tamaño de fuente más pequeño en móviles */
+  }
+
+  .breadcrumb-navigation ol {
+    flex-direction: column; /* Cambiar la orientación en móviles */
+    align-items: center;
+  }
+
+  .breadcrumb-navigation li {
+    margin-bottom: 10px; /* Espacio entre elementos en móviles */
+  }
+}
+
+/* Estilo para el contenedor con ancho fluido */
+.container-wide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+  .container-wide {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header-section {
+    max-width: 1000px;
+  }
+
+  .header-section p {
+    font-size: 1.2rem;
+  }
+}
