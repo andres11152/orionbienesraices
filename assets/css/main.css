@@ -229,7 +229,94 @@ transform: scale(1.1);
   text-align: center;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 }
-
+.card-360 {
+  display: grid;
+  grid-template-areas: "iconarea description360 action";
+  grid-template-columns: 20% 1fr 1fr;
+  background-image: url(/static/media/Purple360Desktop.8abd1987.svg);
+  height: 116px;
+  border-radius: 16px;
+  background-size: cover;
+  background-color: var(--default-color);
+}
+.icon-area{
+  grid-area: iconarea;
+  text-align: center;
+  padding-top: 26px;
+}
+.description360 {
+  padding-top: 18px;
+  grid-area: description360;
+  display: grid;
+  grid-template-areas:
+"titledes indicator"
+"detailexpand detailexpand";
+  grid-template-columns: 70% 1fr;
+}
+.options {
+  grid-area: action;
+  text-align: center;
+  margin-top: 38px;
+}
+.send-bt {
+  width: 210px;
+  height: 40px;
+  left: 79px;
+  top: 1341px;
+  display: inline-flex;
+  padding: 0px 30px;
+  background: var(--accent-color);
+  border-radius: 100px;
+}
+.text-360 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(25, 0, 51);
+  flex: 0 0 auto;
+  order: 0;
+  align-self: center;
+  margin: 8px 0px;
+}
+.icon-recorrido {
+  margin: 7px 0px 7px 8px;
+}
+.detailexpand {
+  grid-area: detailexpand;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(230, 229, 231);
+  margin-top: -14px;
+}
+.tour {
+  grid-area: titledes;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(252, 252, 252);
+}
+.indicator360 {
+  grid-area: indicator;
+  width: 48px;
+  height: 17px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  color: rgb(25, 0, 51);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  padding: 2px 4px;
+  margin-top: 7px;
+}
 /* Efecto de agua */
 @keyframes ripple {
   0% {
@@ -800,6 +887,23 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+  }
+  .card-360 {
+    display: grid;
+    grid-template-areas:
+        "iconarea description360"
+        "action action";
+    grid-template-columns: 20% 1fr;
+    background-image: url(/static/media/Purple360.795e8a77.svg);
+    height: 192px;
+    border-radius: 16px;
+    background-size: cover;
+    background-color: var(--nav-dropdown-color);
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .detailexpand{
+    padding-top: 1.5rem;
   }
 }
 
