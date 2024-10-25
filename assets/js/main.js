@@ -173,7 +173,7 @@ sendBtn.onclick = function() {
   const userName = userNameInput.value.trim();
   if (userName) {
     const encodedMessage = encodeURIComponent(`¡Hola! Soy ${userName} y estoy interesado en comprar un inmueble en Orión Bienes Raíces.`);
-    const whatsappUrl = `https://wa.me/573138081081?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/573229012685?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank'); // Abrir WhatsApp en una nueva ventana
     modal.style.display = "none"; // Cerrar el modal
   } else {
