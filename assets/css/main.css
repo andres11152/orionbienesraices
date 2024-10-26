@@ -142,6 +142,12 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+.dropdown-menu{
+  background-color: var(--default-color);
+  width: 100%;
+}
+
+
 .logo-home {
   position: absolute; /* Permite superponer el logo */
   top: 11%; /* Ajusta la posición vertical según sea necesario */
