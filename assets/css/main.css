@@ -144,10 +144,10 @@ h6 {
 --------------------------------------------------------------*/
 .logo-home {
   position: absolute; /* Permite superponer el logo */
-  top: 9%; /* Ajusta la posición vertical según sea necesario */
+  top: 11%; /* Ajusta la posición vertical según sea necesario */
   left: 5%;
-  width: 130px; /* Ajusta el ancho del logo según sea necesario */
-  z-index: 10; /* Asegura que el logo esté por encima de otros elementos */
+  width: 90px; /* Ajusta el ancho del logo según sea necesario */
+  z-index: 100; /* Asegura que el logo esté por encima de otros elementos */
 }
 
 .header {
