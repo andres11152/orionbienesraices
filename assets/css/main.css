@@ -1908,6 +1908,8 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
-
+.container-home{
+  padding-top: 3rem;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
