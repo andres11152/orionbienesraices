@@ -1,7 +1,6 @@
 /* Estilo para el contenedor principal de la página */
 .page-header-container {
   padding: 60px 0;
-  background-color: #f8f9fa; /* Color de fondo opcional */
 }
 /* Estilo para la navegación de migas de pan */
 .breadcrumb-navigation {
